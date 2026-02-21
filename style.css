@@ -1,4 +1,16 @@
 #home{
-  min-height: 100vh;   /* Home = целый экран */
+  min-height: 100dvh;  
+  width: 100%;
+  background-image: url('images/background.png');
+}
+#music{
+  min-height: 100dvh;   
+  width: 100%;
+  background-color:green;
+}
+#about{
+  min-height: 100dvh;   
   width: 100%;
 }
+
+html{ scroll-behavior: smooth; }
