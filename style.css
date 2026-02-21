@@ -8,6 +8,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 body{
   margin: 0; 
   padding:0;         
@@ -26,15 +27,19 @@ img{
   display: block;
 }
 
-.page_header{
-  width: 100%;
+.header_up{
   display: flex;
-  
-  padding: 47px 122px;          
+  gap:250px;
 }
 
-.page_header nav{
-  margin-left: 220px; /* ВОТ ЭТО и есть расстояние между лого и меню */
+.container_page_header{
+  display: flex;
+  gap: 200px;
+}
+
+.page_header{
+  width: 100%;
+  padding: 57px 180px;          
 }
 
 img.logo{
@@ -54,13 +59,45 @@ img.logo{
 }
 
 .navigation_main{
-  font-size: 18px;
+  font-size: 23px;
   color: white;
   text-decoration: none;
 }
 
+.container_page_header{
+  margin:0;
+  padding: 0;
+}
+
+.text_header{
+  color: white;
+  margin-top: 272px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 190px;  
+
+}
+
+.phone{
+  width: clamp(500px, 28vw, 520px); /* размер телефона */
+  height: auto;    
+  margin-left: 400px;                 /* сохраняет пропорции */
+}
+
+.text_down_header{
+  font-size: 150px;
+}
+
+
+
+.text_down_middle{
+  font-size: 30px;
+}
+
+body{ overflow-x: hidden; }
 #home{
-  min-height: 100dvh;  
+  max-height: 100dvh;  
   width: 100%;
   background-image: url('images/background.png');
   padding: 0;
