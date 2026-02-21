@@ -1,16 +1,79 @@
+* {
+    padding:0;
+    margin: 0;
+}
+
+html { 
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+}
+
+body{
+  margin: 0; 
+  padding:0;         
+  min-height: 100vh;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  line-height: 43px;
+  color: black;
+  background: white;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.page_header{
+  width: 100%;
+  display: flex;
+  
+  padding: 47px 122px;          
+}
+
+.page_header nav{
+  margin-left: 220px; /* ВОТ ЭТО и есть расстояние между лого и меню */
+}
+
+img.logo{
+  top: clamp(20px, 4vw, 47px);
+  left: clamp(20px, 8vw, 122px);
+  width: clamp(5px, 3vw, 53px); 
+  max-width: none;               
+  height: auto;
+}
+
+.navigation_buttons{
+  display: flex;     
+  gap: 100px;        
+  list-style: none;   
+  margin: 0;
+  padding: 0;
+}
+
+.navigation_main{
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
 #home{
   min-height: 100dvh;  
   width: 100%;
   background-image: url('images/background.png');
+  padding: 0;
+  margin: 0;
 }
+
 #music{
   min-height: 100dvh;   
   width: 100%;
   background-color:green;
 }
+
 #about{
   min-height: 100dvh;   
   width: 100%;
 }
-
-html{ scroll-behavior: smooth; }
